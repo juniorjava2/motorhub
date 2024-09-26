@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+  :root {
+    --primary: #c4c7c9; /* Primary color */
+    --primary-foreground: #0f0f0f; /* Foreground color for primary */
+    --secondary: #d3d3d3; /* Secondary color */
+    --secondary-foreground: #000000; /* Foreground color for secondary */
+    --tertiary: #ff7f50; /* Tertiary color */
+    --tertiary-foreground: #ffffff; /* Foreground color for tertiary */
+    --background: #f8f7f7; /* Light gray background */
+    --foreground: #1a1a1a; /* Dark gray foreground */
+    --border: #d3d3d3; /* Light gray border */
+    --input: #d3d3d3; /* Light gray input */
+  }
+  
+  .dark {
+    --primary: #0D0F10; /* Primary color (same for dark theme) */
+    --primary-foreground: #ffffff; /* Foreground color for primary */
+    --secondary: #1F2329; /* Dark gray for secondary */
+    --secondary-foreground: #ffffff; /* White for secondary foreground */
+    --tertiary: #ff7f50; /* Tertiary color (same for dark theme) */
+    --tertiary-foreground: #d9d9d9; /* Light gray for tertiary foreground */
+    --background: #131619; /* Dark gray background */
+    --foreground: #d9d9d9; /* Light gray foreground */
+    --border: #363A3D; /* Medium gray border */
+    --input: #1A1D21; /* Dark gray input */
+
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+ body{
+  @apply bg-background text-black;
+ }
+ 
+}
